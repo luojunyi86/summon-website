@@ -13,6 +13,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Remove legacy entry.html
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: ${{ secrets.SERVER_PORT }}
+          script: rm -f /www/wwwroot/summonskate.com/entry.html
+
       - name: Upload static files to server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -20,7 +29,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "index.html,entry.html"
+          source: "index.html"
           target: "/www/wwwroot/summonskate.com"
           overwrite: true
           strip_components: 0
