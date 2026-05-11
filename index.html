@@ -3,22 +3,305 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SUMMON Skatepark，全国首个透明滑板场，位于广州番禺汉溪长隆芳华里，提供滑板入场、品牌活动、场地合作与内容共创。" />
+  <meta name="description" content="SUMMON Skatepark 广州番禺汉溪长隆芳华里透明滑板场，提供自助入场、滑板活动、场地租赁、商业拍摄与品牌合作。" />
   <title>SUMMON Skatepark | 广州透明滑板场</title>
   <style>
-    :root{--bg:#070707;--panel:#111;--panel2:#171717;--text:#f5f5f5;--muted:#a8a8a8;--line:#2c2c2c;--white:#fff;--accent:#d9d9d9;}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:0 auto;padding:0 22px}.nav{position:sticky;top:0;z-index:20;background:rgba(7,7,7,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}.navin{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.08em}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover{color:#fff}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #fff;border-radius:999px;padding:11px 18px;font-weight:700;font-size:14px;transition:.2s}.btn:hover{background:#fff;color:#000}.btn.dark{background:#fff;color:#000}.btn.dark:hover{background:#dcdcdc}.hero{min-height:calc(100vh - 68px);display:flex;align-items:center;padding:72px 0;border-bottom:1px solid var(--line);background:radial-gradient(circle at 70% 20%,rgba(255,255,255,.13),transparent 26%),linear-gradient(180deg,#090909,#050505)}.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}.eyebrow{display:inline-block;border:1px solid var(--line);color:#d2d2d2;border-radius:999px;padding:6px 11px;font-size:13px;margin-bottom:18px}.h1{font-size:clamp(43px,7vw,88px);line-height:.95;margin:0 0 22px;letter-spacing:-.06em}.lead{font-size:18px;color:#c6c6c6;max-width:660px;margin:0 0 30px}.actions{display:flex;flex-wrap:wrap;gap:12px}.heroCard{border:1px solid var(--line);border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#171717,#0d0d0d);box-shadow:0 30px 80px rgba(0,0,0,.45)}.visual{height:380px;position:relative;background:linear-gradient(135deg,#1d1d1d,#070707)}.visual:before{content:"";position:absolute;inset:34px;border:2px solid rgba(255,255,255,.18);border-radius:22px;transform:skewY(-5deg)}.visual:after{content:"TRANSPARENT SKATEPARK";position:absolute;left:28px;bottom:24px;color:rgba(255,255,255,.72);font-size:13px;letter-spacing:.18em}.ramp{position:absolute;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.32);box-shadow:inset 0 0 20px rgba(255,255,255,.08);backdrop-filter:blur(1px)}.r1{width:170px;height:90px;left:48px;top:170px;transform:skewX(-25deg)}.r2{width:210px;height:34px;right:56px;top:210px;transform:rotate(-10deg)}.r3{width:110px;height:130px;right:75px;top:70px;border-radius:16px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.stat{padding:18px;border-right:1px solid var(--line)}.stat:last-child{border-right:none}.stat b{display:block;font-size:24px}.stat span{font-size:12px;color:var(--muted)}section{padding:84px 0;border-bottom:1px solid var(--line)}.sectionHead{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}.kicker{color:#aaa;font-size:13px;letter-spacing:.18em;text-transform:uppercase}.title{font-size:36px;line-height:1.15;margin:8px 0 0;letter-spacing:-.04em}.desc{max-width:560px;color:#bdbdbd;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:22px}.card h3{margin:0 0 10px;font-size:20px}.card p{color:#b8b8b8;margin:0}.list{display:grid;gap:12px}.row{display:grid;grid-template-columns:180px 1fr;gap:18px;border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:18px}.row b{font-size:17px}.row span{color:#b8b8b8}.entryBox{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}.priceBox{background:#fff;color:#000;border-radius:26px;padding:28px}.priceLine{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #d8d8d8}.priceLine:last-child{border-bottom:none}.priceLine strong{font-size:28px}.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}.footer{padding:30px 0;color:#777;font-size:13px}.mobileOnly{display:none}@media(max-width:820px){.navlinks{display:none}.hero{padding:42px 0;min-height:auto}.heroGrid,.entryBox,.contact{grid-template-columns:1fr}.visual{height:290px}.cards{grid-template-columns:1fr}.sectionHead{display:block}.row{grid-template-columns:1fr}.h1{font-size:50px}.title{font-size:30px}.stats{grid-template-columns:1fr}.stat{border-right:none;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:none}.mobileOnly{display:block}}
+    :root {
+      --bg: #02060d;
+      --panel: rgba(255, 255, 255, 0.07);
+      --panel-strong: rgba(255, 255, 255, 0.12);
+      --text: #f7fbff;
+      --muted: #b9c8d7;
+      --line: rgba(255, 255, 255, 0.16);
+      --blue: #27c7ff;
+      --green: #62e39a;
+      --ink: #06101b;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+
+    .nav {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 20;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(2, 6, 13, 0.72);
+      backdrop-filter: blur(18px) saturate(1.2);
+    }
+    .nav-inner {
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+    .brand img { width: 112px; height: auto; }
+    .nav-links { display: flex; align-items: center; gap: 22px; color: #d7e4ee; font-size: 14px; font-weight: 800; }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: var(--blue);
+      color: var(--ink);
+      font-weight: 950;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(2, 6, 13, 0.08) 0%, rgba(2, 6, 13, 0.64) 56%, #02060d 96%),
+        linear-gradient(90deg, rgba(2, 6, 13, 0.92), rgba(2, 6, 13, 0.38) 50%, rgba(39, 199, 255, 0.12));
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 142px 0 76px;
+    }
+    .hero-logo { width: min(318px, 78vw); filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.42)); }
+    .chip {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 22px;
+      padding: 8px 12px;
+      border: 1px solid rgba(39, 199, 255, 0.55);
+      border-radius: 999px;
+      background: rgba(0, 112, 170, 0.22);
+      color: #c9efff;
+      font-size: 14px;
+      font-weight: 900;
+    }
+    h1 {
+      max-width: 920px;
+      margin: 20px 0 18px;
+      font-size: clamp(44px, 8vw, 92px);
+      line-height: 1.02;
+      letter-spacing: 0;
+      font-weight: 950;
+    }
+    .lead {
+      width: min(760px, 100%);
+      margin: 0;
+      color: #e8f5ff;
+      font-size: clamp(17px, 2vw, 21px);
+      line-height: 1.82;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28);
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border: 1px solid rgba(255, 255, 255, 0.62);
+      border-radius: 999px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 950;
+      transition: transform 220ms var(--ease), background 220ms var(--ease), color 220ms var(--ease);
+    }
+    .btn:hover { transform: translateY(-2px); background: #fff; color: #02060d; }
+    .btn.primary { border-color: var(--blue); background: var(--blue); color: var(--ink); }
+
+    section { padding: 78px 0; }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(280px, 0.62fr);
+      gap: 32px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+    .kicker { color: var(--blue); font-size: 13px; font-weight: 950; text-transform: uppercase; }
+    h2 { margin: 8px 0 0; font-size: clamp(30px, 5vw, 52px); line-height: 1.1; letter-spacing: 0; }
+    .section-head p, .card p, .row p, .price p { margin: 0; color: var(--muted); }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .card, .row, .price-panel, .contact-panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(180deg, var(--panel-strong), rgba(255, 255, 255, 0.04));
+      backdrop-filter: blur(18px) saturate(1.15);
+    }
+    .card { min-height: 210px; padding: 22px; }
+    .card .num { color: var(--green); font-size: 13px; font-weight: 950; }
+    .card h3 { margin: 18px 0 8px; font-size: 22px; line-height: 1.25; }
+
+    .rows { display: grid; gap: 12px; }
+    .row { display: grid; grid-template-columns: 210px 1fr; gap: 20px; padding: 20px; }
+    .row h3 { margin: 0; font-size: 21px; }
+
+    .entry-layout { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 16px; align-items: stretch; }
+    .price-panel { padding: 22px; background: #f8fbff; color: #06101b; }
+    .price-panel h3 { margin: 0 0 10px; font-size: 25px; }
+    .price { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 15px 0; border-bottom: 1px solid #d8e2eb; }
+    .price:last-child { border-bottom: 0; }
+    .price p { color: #4c5a66; }
+    .price strong { font-size: 34px; line-height: 1; }
+
+    .contact-panel { padding: 24px; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .contact-panel strong { display: block; margin-bottom: 8px; color: #fff; font-size: 18px; }
+    .contact-panel p { margin: 0; color: var(--muted); }
+
+    footer { padding: 26px 0 34px; color: #8da1b2; font-size: 13px; }
+
+    @media (max-width: 820px) {
+      .nav-inner { height: 62px; }
+      .brand img { width: 98px; }
+      .nav-links { display: none; }
+      .hero { min-height: 88vh; }
+      .hero-content { padding: 116px 0 48px; }
+      .lead { font-size: 16px; line-height: 1.72; }
+      .actions, .btn { width: 100%; }
+      .section-head, .entry-layout, .contact-grid, .row { grid-template-columns: 1fr; }
+      section { padding: 54px 0; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .card { min-height: auto; }
+      .price-panel { border-radius: 18px; }
+      .price strong { font-size: 28px; }
+    }
   </style>
 </head>
 <body>
-  <nav class="nav"><div class="wrap navin"><a class="brand" href="#top">SUMMON</a><div class="navlinks"><a href="#about">场地</a><a href="#events">活动</a><a href="#entry">自助入场</a><a href="#contact">合作联系</a></div></div></nav>
+  <nav class="nav" aria-label="主导航">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="SUMMON 首页"><img src="assets/summon-logo-complete.png" alt="SUMMON Skatepark" /></a>
+      <div class="nav-links">
+        <a href="#about">场地</a>
+        <a href="#events">活动合作</a>
+        <a href="#entry">自助入场</a>
+        <a href="#contact">联系</a>
+        <a class="nav-cta" href="entry.html">扫码入场</a>
+      </div>
+    </div>
+  </nav>
+
   <main id="top">
-    <section class="hero"><div class="wrap heroGrid"><div><span class="eyebrow">Guangzhou · Transparent Skatepark</span><h1 class="h1">SUMMON<br/>SKATEPARK</h1><p class="lead">全国首个透明滑板场，位于广州番禺汉溪长隆芳华里。这里不是传统滑板场，而是滑板、品牌活动、内容生产与城市商业空间共生的平台。</p><div class="actions"><a class="btn dark" href="entry.html">自助入场</a><a class="btn" href="#contact">品牌合作 / 场地租赁</a></div></div><div class="heroCard"><div class="visual"><div class="ramp r1"></div><div class="ramp r2"></div><div class="ramp r3"></div></div><div class="stats"><div class="stat"><b>透明</b><span>亚克力滑板道具</span></div><div class="stat"><b>商场</b><span>户外商业广场场景</span></div><div class="stat"><b>活动</b><span>品牌发布 / 赛事 / 内容共创</span></div></div></div></div></section>
-    <section id="about"><div class="wrap"><div class="sectionHead"><div><div class="kicker">About</div><h2 class="title">一个可被内容传播的滑板场</h2></div><p class="desc">SUMMON 使用透明亚克力材质搭建滑板区域，夜间可结合灯光呈现独特视觉效果。场地包含滑板区、休闲区、小型培训区与快闪摊位，适合日常滑板、活动拍摄、品牌合作与社群运营。</p></div><div class="cards"><div class="card"><h3>透明场地识别度</h3><p>2–3 cm 厚透明亚克力道具，具有强视觉记忆点，适合短视频、活动摄影和商业传播。</p></div><div class="card"><h3>商业广场位置</h3><p>位于广州番禺汉溪长隆芳华里，场地天然连接商场人流、品牌活动和本地生活消费。</p></div><div class="card"><h3>社群与活动基础</h3><p>长期运营本地滑板社群，具备赛事、发布会、派对、品牌联名活动的执行经验。</p></div></div></div></section>
-    <section id="events"><div class="wrap"><div class="sectionHead"><div><div class="kicker">Cases</div><h2 class="title">活动与合作方向</h2></div><p class="desc">SUMMON 可承接滑板赛事、品牌发布、线下体验、内容拍摄、商业快闪和场地联名活动。</p></div><div class="list"><div class="row"><b>品牌活动</b><span>适合滑板鞋、街头服饰、饮品、相机、潮流生活方式品牌进行线下发布与内容共创。</span></div><div class="row"><b>赛事与派对</b><span>可执行线路赛、Best Trick、互动挑战、音乐派对、世界滑板日等街头文化活动。</span></div><div class="row"><b>拍摄与租赁</b><span>支持商业拍摄、短视频取景、品牌视觉素材生产与小型发布场景搭建。</span></div></div></div></section>
-    <section id="entry"><div class="wrap entryBox"><div><div class="kicker">Self Entry</div><h2 class="title">现场自助入场</h2><p class="desc">SUMMON 采用半无人自助入场方式：用户扫码查看票价与规则，自助付款后保留付款记录。工作人员在场时随机抽查，无票者补票或离场。</p><div class="actions" style="margin-top:24px"><a class="btn dark" href="entry.html">进入自助入场页</a></div></div><div class="priceBox"><h3 style="margin:0 0 10px;font-size:24px">门票标准</h3><div class="priceLine"><span>单次入场<br/><small>含指定饮品一杯</small></span><strong>¥10</strong></div><div class="priceLine"><span>学生票<br/><small>凭有效学生证，不含饮品</small></span><strong>¥5</strong></div><div class="priceLine"><span>每周二<br/><small>免费入场，仍需遵守规则</small></span><strong>FREE</strong></div></div></div></section>
-    <section id="contact"><div class="wrap"><div class="sectionHead"><div><div class="kicker">Contact</div><h2 class="title">合作联系</h2></div><p class="desc">如需品牌活动、场地租赁、商业拍摄、培训合作或内容共创，可联系 SUMMON 团队。</p></div><div class="contact"><div class="card"><h3>合作方向</h3><p>品牌活动 / 场地租赁 / 商业拍摄 / 滑板培训 / 内容共创 / 快闪合作</p></div><div class="card"><h3>地址</h3><p>广州番禺区汉溪长隆芳华里 SUMMON Skatepark<br/>具体联系信息可后续替换为微信、电话或社群二维码。</p></div></div></div></section>
+    <section class="hero">
+      <img class="hero-image" src="assets/summon-night.jpg" alt="SUMMON Skatepark 夜间透明滑板场" />
+      <div class="wrap hero-content">
+        <img class="hero-logo" src="assets/summon-logo-complete.png" alt="SUMMON Skatepark" />
+        <div class="chip">Guangzhou · Transparent Skatepark</div>
+        <h1>广州透明滑板场与街头文化现场</h1>
+        <p class="lead">SUMMON 位于广州番禺汉溪长隆芳华里，以透明亚克力滑板道具、夜间灯光和商业广场动线，连接日常滑板、内容拍摄、品牌活动、赛事派对与城市青年社群。</p>
+        <div class="actions">
+          <a class="btn primary" href="entry.html">自助扫码入场</a>
+          <a class="btn" href="#contact">品牌合作 / 场地租赁</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">About SUMMON</div>
+            <h2>不是传统滑板场，是可被看见的城市内容空间</h2>
+          </div>
+          <p>透明道具、商场户外场景、滑板社群和活动执行能力，让 SUMMON 可以同时承载练习、拍摄、发布、快闪和商业合作。</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><span class="num">01</span><h3>透明场地识别度</h3><p>透明亚克力道具在白天和夜间都有强视觉记忆点，适合短视频、照片传播和品牌视觉素材生产。</p></article>
+          <article class="card"><span class="num">02</span><h3>芳华里商业场景</h3><p>场地位于广州番禺汉溪长隆芳华里，天然连接商场人流、本地生活消费和线下活动曝光。</p></article>
+          <article class="card"><span class="num">03</span><h3>滑板社群运营</h3><p>面向本地滑手、初学者和潮流生活方式人群，支持日常开放、教学咨询、活动报名和社群传播。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Events & Collab</div>
+            <h2>活动、拍摄、发布与联名</h2>
+          </div>
+          <p>SUMMON 可承接滑板赛事、品牌发布、商业拍摄、线下体验、快闪摊位和街头文化主题活动。</p>
+        </div>
+        <div class="rows">
+          <article class="row"><h3>品牌活动</h3><p>适合滑板鞋、街头服饰、饮品、相机、运动户外、潮流生活方式品牌进行线下发布和内容共创。</p></article>
+          <article class="row"><h3>赛事派对</h3><p>可执行线路赛、Best Trick、互动挑战、音乐派对、世界滑板日和社群主题活动。</p></article>
+          <article class="row"><h3>拍摄租赁</h3><p>支持商业拍摄、短视频取景、品牌视觉素材生产、小型发布场景搭建与场地包场。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="entry">
+      <div class="wrap entry-layout">
+        <div>
+          <div class="kicker">Self Entry</div>
+          <h2>现场自助入场</h2>
+          <p class="lead">进入滑板区域前，请先完成门票支付并保留微信 / 支付宝付款记录。工作人员在场时可能随机抽查，无票者需补票或离场。</p>
+          <div class="actions"><a class="btn primary" href="entry.html">进入自助入场页</a></div>
+        </div>
+        <div class="price-panel" aria-label="门票价格">
+          <h3>门票标准</h3>
+          <div class="price"><p>单次入场<br />含指定饮品一杯</p><strong>¥10</strong></div>
+          <div class="price"><p>学生票<br />18 岁以下凭有效学生证，不含饮品</p><strong>¥5</strong></div>
+          <div class="price"><p>每周二<br />免费入场，仍需遵守场地规则</p><strong>FREE</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Contact</div>
+            <h2>合作联系</h2>
+          </div>
+          <p>品牌活动、场地租赁、商业拍摄、滑板培训、内容共创和快闪合作，均可联系 SUMMON 团队。</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-panel"><strong>合作方向</strong><p>品牌活动 / 场地租赁 / 商业拍摄 / 滑板培训 / 内容共创 / 快闪合作</p></div>
+          <div class="contact-panel"><strong>场地地址</strong><p>广州番禺区汉溪长隆芳华里 SUMMON Skatepark</p></div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="wrap">© SUMMON Skatepark. Guangzhou.</div></footer>
+
+  <footer><div class="wrap">© SUMMON Skatepark · Guangzhou</div></footer>
 </body>
 </html>
