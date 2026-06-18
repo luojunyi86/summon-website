@@ -113,7 +113,7 @@ function Home() {
         <p className="intro">自助入场、票务支付和场地规则已经接入官网。现场扫码或直接进入独立入口页面完成付款。</p>
         <div className="home-actions">
           <a className="primary-link" href="/entry">进入自助入场</a>
-          <a className="secondary-link" href="https://summonskate.com/entry">复制正式入口</a>
+          <a className="secondary-link" href="https://summonskate.com/entry">打开正式入口</a>
         </div>
       </section>
     </main>
